@@ -20,11 +20,21 @@ struct ContentView: View {
             
             SearchBarView(text: $searchText)
             
+            //show a prompt when no search text is given
+            if searchText.isEmpty {
+                Spacer()
+                
+                Text("Please enter an artist name")
+                    .font(.title)
+                    .foregroundColor(.secondary)
+                
+                Spacer()
+            } else {
+            
             //push the search bar to the top
             Spacer()
-            
+            }
         }
-            .padding()
     }
 }
 
