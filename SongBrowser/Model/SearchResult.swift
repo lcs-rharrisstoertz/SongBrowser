@@ -11,5 +11,4 @@ struct SearchResult: Decodable {
     
     let results: [Song]
     
-    
 }
