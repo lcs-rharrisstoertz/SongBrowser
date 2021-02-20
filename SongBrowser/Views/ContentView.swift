@@ -29,13 +29,17 @@ struct ContentView: View {
                     .foregroundColor(.secondary)
                 
                 Spacer()
+                
             } else {
-            
-            //push the search bar to the top
-            Spacer()
+                
+                //push the search bar to the top
+                Spacer()
             }
+            
         }
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
