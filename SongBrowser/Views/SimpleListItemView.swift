@@ -26,6 +26,6 @@ struct SimpleListItemView: View {
 
 struct SimpleListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        SimpleListItemView(title: <#String#>, caption: <#String#>)
+        SimpleListItemView(title: exampleSong.trackName, caption: exampleSong.artistName)
     }
 }
