@@ -44,13 +44,18 @@ struct ContentView: View {
                 //Show the list of results
                 //Keypath of \.trackid tells the list view what property to use to uniquely identify each song
                 List(songs, id: \.trackId) { currentSong in
-                    SimpleListItemView(title: currentSong.trackName, caption: currentSong.artistName)
+                    
+                    NavigationLink(
+                        destination: SongDetailView(song: currentSong)){
+                        
+                        SimpleListItemView(title: currentSong.trackName, caption: currentSong.artistName)
+                    }
                 }
                 
             }
             
         }
-        
+        .navigationTitle("Song Browser")
     }
     
     
